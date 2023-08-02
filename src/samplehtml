@@ -1,0 +1,39 @@
+
+<html>
+<head>
+  <title>Sample HTML</title>
+</head>
+<body>
+  <h1>Sample HTML</h1>
+  
+  <label for="studentName">Student Name:</label>
+  <input type="text" id="studentName" name="studentName" required><br>
+
+  <label for="schoolName">School Name:</label>
+  <input type="text" id="schoolName" name="schoolName" required><br>
+
+  <label for="gradeAndDivision">Grade and Division:</label>
+  <input type="text" id="gradeAndDivision" name="gradeAndDivision" required><br>
+
+  <label for="score">Score (A, A+, B, B+, C, F):</label>
+  <input type="text" id="score" name="score" required><br>
+
+  <button type="button" onclick="addStudentDetails()">Submit</button>
+
+  <script>
+    function addStudentDetails() {
+      var studentName = document.getElementById("studentName").value;
+      var schoolName = document.getElementById("schoolName").value;
+      var gradeAndDivision = document.getElementById("gradeAndDivision").value;
+      var score = document.getElementById("score").value;
+
+      console.log("Student Name: " + studentName);
+      console.log("School Name: " + schoolName);
+      console.log("Grade and Division: " + gradeAndDivision);
+      console.log("Score: " + score);
+
+      alert("Successfully added Student details");
+    }
+  </script>
+</body>
+</html>
